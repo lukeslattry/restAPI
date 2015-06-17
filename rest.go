@@ -20,7 +20,6 @@ type Vegetables map[string]string
 
 func serveRest( w http.ResponseWriter, r *http.Request ) {
 	response, err := getJsonResponse()
-
 	if err != nil {
 		panic(err)
 	}
